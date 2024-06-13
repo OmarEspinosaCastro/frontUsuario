@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Gestión de Usuario Fornt
+Dentro de las características requeridas para el proyecto de lado front se desea elaborar una interfaz en este caso será web con reactJs(javascript) para consumir los endpoints previamente trabajados y comprobados con Postman. Se trabaja con Visual Code y el navegador para darle seguimiento a errores y manipulación de información
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dentro del Loguin como ya se menciono se validan 4 casos.
 
-## Available Scripts
+1\.- Que el usuario exista
 
-In the project directory, you can run:
+2\.- Que la contraseña sea correcta
 
-### `npm start`
+3\.- Que la cuenta del usuario tenga vigencia
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4\.- Que los datos sean correcto tenga acceso
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+En cada uno de los casos se manejo mensajes en el formulario para guiar al usuario
 
-### `npm test`
+![image](https://github.com/OmarEspinosaCastro/frontUsuario/assets/38709814/2b070306-3781-4c47-bcba-781257aac51e)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Dentro de la bienvenida tenemos los apartados de gestionar los usuario, tablero de búsqueda y cerrar sesión.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://github.com/OmarEspinosaCastro/frontUsuario/assets/38709814/fec5da4f-de1b-4a24-ab9c-82651c8da8d7)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+En la gestión de usuario esta el formulario para insertar los datos del usuario validando los campos requeridos y tipo de campo a llenar, de la misma forma después se utiliza para la edición del mismo.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://github.com/OmarEspinosaCastro/frontUsuario/assets/38709814/689726c8-fb88-40be-ae80-fb51d93d7dfb)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+En el tablero de búsqueda de inicio mostraremos todos los usuarios registrados en la base de datos, contamos con tres botones que dependiendo del estatus del usuario actualizara la tabla ya sea para los que estan activos, inactivos, revocados y otro que muestra de nuevo todos los usuarios.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://github.com/OmarEspinosaCastro/frontUsuario/assets/38709814/f1c1d072-8ca7-4dd1-a170-8ce0e0e4af5d)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+También se cuenta con tres filtros que buscan el usuario por nombre, fecha de alta y fecha de baja de la misma forma que los botones actualiza la tabla de las coincidencias. En cada fila se cuenta con acciones para dar de baja y editar el registro seleccionado ejemplo si le damos clic en Editar nos redirige al formulario con la información
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://github.com/OmarEspinosaCastro/frontUsuario/assets/38709814/ceeda42a-3326-425f-858b-7baf1fbbace8)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Para dar de baja un usuario mostramos mensaje de confirmación para verificar que se quiere dar de baja
 
-### Analyzing the Bundle Size
+![image](https://github.com/OmarEspinosaCastro/frontUsuario/assets/38709814/7c5611ca-bec2-4e85-8a9c-2981277a22d0)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
